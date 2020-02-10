@@ -30,21 +30,21 @@
 #### **Research Experience**
 ***Department of Chemistry and Biochemistry, University of Arkansas*** 
 *Research adviser: Dr. Suresh Kumar* 
--Isolation of Arkansas pygmy rattlesnake genome and investigation of the specie's venom evolution within the clade of Toxicofera and Colubroidae
--Biochemical investigation of their basal toxicity, biological activities, biochemical properties and potential medical applications 
--Literature review of the pygmy rattlesnakes and their toxins’ availability, purification process, and potential applications, etc.
+- Isolation of Arkansas pygmy rattlesnake genome and investigation of the specie's venom evolution within the clade of Toxicofera and Colubroidae
+- Biochemical investigation of their basal toxicity, biological activities, biochemical properties and potential medical applications 
+- Literature review of the pygmy rattlesnakes and their toxins’ availability, purification process, and potential applications, etc.
 
 ***Department of Physical Science, University of Arkansas-Fort Smith*** 
 *Research adviser: Dr. Jeremy Durchman*
--Investigation of myeloperoxidase and its effects within the biological system and potential application in medicine through literature
--Investigation of the crystallization process of myeloperoxidase and its co-crystallized ligands
--Isolation and purification of the protein from the original source of equine blood through centrifugation, dialysis, gel electrophoresis and chromatography techniques
+- Investigation of myeloperoxidase and its effects within the biological system and potential application in medicine through literature
+- Investigation of the crystallization process of myeloperoxidase and its co-crystallized ligands
+- Isolation and purification of the protein from the original source of equine blood through centrifugation, dialysis, gel electrophoresis and chromatography techniques
 
 ***Department of Biological Science, University of Arkansas-Fort Smith*** 
 *Research adviser: Dr. Ragupathy Kannan*
--Chronological investigation of multiple toxin families from snake venoms, their relationship, evolution within the clade of Toxicofera and Colubroidae through literature
--Biochemical investigation of their basal toxicity, biological activities, biochemical properties and potential medical applications through literature 
--Literature review of the snake venoms and their toxins’ availability, purification process, genomic sequences, potential applications, etc.
+- Chronological investigation of multiple toxin families from snake venoms, their relationship, evolution within the clade of Toxicofera and Colubroidae through literature
+- Biochemical investigation of their basal toxicity, biological activities, biochemical properties and potential medical applications through literature 
+- Literature review of the snake venoms and their toxins’ availability, purification process, genomic sequences, potential applications, etc.
 
 
 ***Department of Behavioral Science, University of Arkansas-Fort Smith***
@@ -57,12 +57,12 @@ My interests lie between investigating the biochemical properties of snake venom
 
 #### **Statistical and Computer Experience**
 
--IGOR Pro
--IBM SPSS
--Microsoft Office (Excel, PowerPoint, Word, etc.)
--Wolfram Mathematica
--Vision Pro
--Adobe Creative Cloud (Photoshop, Bridge, Audition, etc:
+- IGOR Pro
+- IBM SPSS
+- Microsoft Office (Excel, PowerPoint, Word, etc.)
+- Wolfram Mathematica
+- Vision Pro
+- Adobe Creative Cloud (Photoshop, Bridge, Audition, etc:
 
 #### **Publications and Conference Presentation**
 - Phan, P., & Benjamin, J. (2017, November). Pain perspective and self-criticism in non-suicidal self-injury adults. Poster session presented at the Undergraduate Psychology Symposium conducted at the University of Arkansas-Fort Smith, Fort Smith, AR.
