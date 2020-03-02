@@ -1,0 +1,3 @@
+#The raw score is nearly the same in questions 2-5 no matter how big the database is. But number 6 shows that the bigger the database is, the smaller the raw score would.
+#The bit score is nearly the same in questions 2-5 no matter how big the database is. But number 6 shows that the bigger the database, the smaller the bit sscores.
+#The bigger thee database the bigger the e-values 

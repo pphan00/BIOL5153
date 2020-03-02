@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#PBS -N BLAST
+#PBS -q tiny12core
+#PBS -j oe
+#PBS -m abe
+#PBS -M phucphan@uark.edu
+#PBS -o phan_assn04.8.2.out
+#PBS -l nodes=1:ppn=8
+#PBS -l walltime=00:00:30:00
+
+cd $PBS_O_WORKDIR
+
+module load blast/2.6.0+
+
+makeblastdb -in watermelon.fsa -dbtype nucl
+
+blastn -outfmt 0 -dust yes -word_size 9 -reward 2 -penalty -3 -gapopen 5 -gapextend 2 -query watermelon.fsa -db watermelon.fsa

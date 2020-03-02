@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#PBS -N ques5
+#PBS -q tiny12core
+#PBS -j oe
+#PBS -m abe 
+#PBS -M phucphan@uark.edu
+#PBS -o phan_assn04.5.out
+#PBS -l nodes=1:ppn=8
+#PBS -l walltime=00:06:00:00
+
+cd $PBS_O_WORKDIR
+
+module load blast/2.6.0+
+
+wget ftp://ftp.ncbi.nih.gov/blast/db/FASTA/nr.gz
+
+gunzip -c nr.gz| cat *.fasta > all_nr.fasta
+
+makeblastdb -in all_nr.fasta -dbtype nucl
+
+blastn -query nad4L.fasta -db all_nr.fasta

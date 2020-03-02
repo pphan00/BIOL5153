@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#PBS -N ques4
+#PBS -q tiny12core
+#PBS -j oe
+#PBS -m abe 
+#PBS -M phucphan@uark.edu
+#PBS -o phan_assn04.4.out
+#PBS -l nodes=1:ppn=8
+#PBS -l walltime=00:00:01:00
+
+cd $PBS_O_WORKDIR
+
+module load blast/2.6.0+
+
+makeblastdb -in all_plant_mito.fasta -dbtype nucl
+
+blastn -query nad4L.fasta -db all_plant_mito.fasta
