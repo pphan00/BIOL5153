@@ -9,3 +9,4 @@ Homework List:
 - Homework p4b ch02 (due Feb 26) - p4b_ch02.ipynb
 - Assignment 04 (due March 2) - assn04 directory
 - Homework p4b ch03 (due March 4) - p4b_ch03.ipynb
+- Homework p4b ch04 (due March 11) - p4b_ch04.ipynb
