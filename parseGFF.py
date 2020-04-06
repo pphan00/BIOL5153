@@ -24,6 +24,9 @@ with open(args.gff_input, 'r') as gff:
 			start = line[3]
 			end = line[4]
 			print(start, end)
+with open(args.fasta_input, 'r') as fasta:
+	print("fasta opens")
+
 #assignment 5
 #for line in open_file:
 
@@ -44,7 +47,7 @@ with open(args.gff_input, 'r') as gff:
 	#print(order_list)
 
 gff.close()
-
+fasta.close()
 
 
 
