@@ -2,6 +2,7 @@
 
 import csv
 import argparse
+from Bio import SeqIO
 
 #assignment 6
 parser = argparse.ArgumentParser(description = "This script parse a gff file and some other things")
@@ -11,7 +12,7 @@ parser.add_argument("fasta_input", help = "name of the fasta file")
 
 args = parser.parse_args()
 
-gene_list = []
+genome = SeqIO.read(args.fasta, 'fasta')
 
 with open(args.gff_input, 'r') as gff:
 	
@@ -23,11 +24,19 @@ with open(args.gff_input, 'r') as gff:
 		else:
 			start = line[3]
 			end = line[4]
-			print(start, end)
-with open(args.fasta_input, 'r') as fasta:
-	print("fasta opens")
+			
+#assignment 7
+			#test whether this is a CDS feature
+			if line[2] != 'CDS':
+				continue
+			else:
+				position1 = int(start)
+				position2 = int(end)
+				
+				print(genome)
 
 #assignment 5
+#gene_list =[]
 #for line in open_file:
 
 	#line = line.rstrip('\n')
