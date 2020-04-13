@@ -14,4 +14,6 @@ Homework List:
 - Homework p4b ch09 (due March 20) - p4b_ch09.ipynb
 - Assignment 06 (due April 6) - parseGFF.py
 - Assignment 07 (due April 8) - parseGFF.py
--Homework p4b ch05 (due April 8) - p4b_ch05.ipynb
+- Homework p4b ch05 (due April 8) - p4b_ch05.ipynb
+- Assingment 07_updated with compartmentalized script - parseGFF.py
+- Homework p4b ch07 (due April 13) - p4b_07.ipynb
