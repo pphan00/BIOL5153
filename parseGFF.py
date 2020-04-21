@@ -3,6 +3,7 @@
 import csv
 import argparse
 from Bio import SeqIO
+import re
 
 #assignment 6
 
@@ -34,6 +35,7 @@ def parse_gff(genome):
 			if not line:
 				continue
 			else:
+				organism = line[0].replace(" ", "_")
 				start = int(line[3])
 				end = int(line[4])
 				CDS_feature = line[2]
@@ -45,11 +47,21 @@ def parse_gff(genome):
 
 					#extract the sequence
 					feature_seq = genome[start -1: end]
-					print(attributes)
+					
+					#extract gene name via regular expression
+					match = re.search("Gene\s+(\S+)\s+", attributes)
+					Gene_Name = match.group(1)
+					#print(Gene_Name)
+
+					#print fasta format
+					print(">" + organism + "_" + Gene_Name)
 					print(feature_seq)
-					feature_GC = gc(feature_seq)
-					GCround = round(feature_GC, 2)
-					print(GCround)
+
+					#print(attributes)
+					#print(feature_seq)
+					#feature_GC = gc(feature_seq)
+					#GCround = round(feature_GC, 2)
+					#print(GCround)
 
 def main(): #call all previous funtions to cascade down
 	genome_sequence = parse_fasta()
