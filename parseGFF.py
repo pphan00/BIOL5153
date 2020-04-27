@@ -47,7 +47,17 @@ def parse_gff(genome):
 
 					#extract the sequence
 					feature_seq = genome[start -1: end]
-					
+
+					#reverse complement freature_seq 
+					if strand == '-':
+
+					#extract exon number
+
+					print(start, end)
+
+					# dictionary called cds where: key = gene name, value = another dictionary (key : exon numebr, value = sequence of that exon)
+					cds_dict = {??}
+
 					#extract gene name via regular expression
 					match = re.search("Gene\s+(\S+)\s+", attributes)
 					Gene_Name = match.group(1)
@@ -61,7 +71,11 @@ def parse_gff(genome):
 					#print(feature_seq)
 					#feature_GC = gc(feature_seq)
 					#GCround = round(feature_GC, 2)
-					#print(GCround)
+
+def codon2aa(codon):					#print(GCround)
+	codon_dict = {'AAA':'K', 'AAC':'N', 'AAG':'K', 'AAT':'N', 'ACA':'T', 'ACC':'T', 'ACG':'T', 'ACT':'T', 'AGA':'R', 'AGC':'S', 'AGG':'R', 'AGT':'S', 'ATA':'I', 'ATC':'I', 'ATG':'M', 'ATT':'I', 'CAA':'Q', 'CAC':'H', 'CAG':'Q', 'CAT':'H', 'CCA':'P', 'CCC':'P', 'CCG':'P', 'CCT':'P', 'CGA':'R', 'CGC':'R', 'CGG':'R', 'CGT':'R', 'CTA':'L', 'CTC':'L', 'CTG':'L', 'CTT':'L', 'GAA':'E', 'GAC':'D', 'GAG':'E', 'GAT':'D', 'GCA':'A', 'GCC':'A', 'GCG':'A', 'GCT':'A', 'GGA':'G', 'GGC':'G', 'GGG':'G', 'GGT':'G', 'GTA':'V', 'GTC':'V', 'GTG':'V', 'GTT':'V', 'TAA':'O', 'TAC':'Y', 'TAG':'O', 'TAT':'Y', 'TCA':'S', 'TCC':'S', 'TCG':'S', 'TCT':'S', 'TGA':'O', 'TGC':'C', 'TGG':'W', 'TGT':'C', 'TTA':'L', 'TTC':'F', 'TTG':'L', 'TTT':'F'}
+
+	return(codon_dict.get(codon, '-'))
 
 def main(): #call all previous funtions to cascade down
 	genome_sequence = parse_fasta()
