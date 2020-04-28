@@ -49,38 +49,38 @@ def parse_gff(genome):
 				attributes = line[8]
 #assignment 7
 				#test whether this is a CDS feature
-				if CDS_feature == 'CDS':
+				#if CDS_feature == 'CDS':
 
-					#extract the sequence
-					feature_seq = genome[start -1: end]
+				#extract the sequence
+				feature_seq = genome[start -1: end]
 
-					#reverse complement freature_seq 
-					if strand == '-':
-						feature_seq = revcomp(feature_seq)
+				#reverse complement freature_seq 
+				if strand == '-':
+					feature_seq = revcomp(feature_seq)
 
-					#extract gene name
-					b = re.search("Gene\s+(\S+)\s+", attributes)
-					Gene_Name = b.group(1)
+				#extract gene name
+				b = re.search("Gene\s+(\S+)\s+", attributes)
+				Gene_Name = b.group(1)
 
-					#print(Gene_Name)
+				#print(Gene_Name)
 
-					#extract exon number
-					a = re.search("exon\s+(\d+)", attributes)
+				#extract exon number
+				a = re.search("exon\s+(\d+)", attributes)
 
-					#test whether there are multiple exons
-					if a:
-						exon_number = a.group(1)
-						#print(Gene_Name, exon_number)
+				#test whether there are multiple exons
+				if a:
+					exon_number = a.group(1)
+					#print(Gene_Name, exon_number)
 
-						# dictionary called cds where: key = gene name, value = another dictionary (key : exon numebr, value = sequence of that exon)
-						genes_with_introns[Gene_Name][exon_number] = feature_seq
+					# dictionary called cds where: key = gene name, value = another dictionary (key : exon numebr, value = sequence of that exon)
+					genes_with_introns[Gene_Name][exon_number] = feature_seq
 
-					#single intronless genes evaluated as false and end up here
-					#all of these single intronless gene will be printed out in FASTA format as there is no need to store them
-					else:
-						#print fasta format
-						print(">" + organism + "_" + Gene_Name)
-						print(feature_seq)
+				#single intronless genes evaluated as false and end up here
+				#all of these single intronless gene will be printed out in FASTA format as there is no need to store them
+				else:
+					#print fasta format
+					print(">" + organism + "_" + Gene_Name)
+					print(feature_seq)
 
 	#loop over genes_with_intron (key = gene name, value = dictionary of exon) dictionary and print the CDS sequence
 	print()
